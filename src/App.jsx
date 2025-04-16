@@ -49,7 +49,6 @@ function App() {
             <label>Portfolio Link</label>
             <input type="url" name="portfolio" id="portfolio" required />
           </div>
-
           <button type="submit">Sign Up</button>
         </form>
       )}

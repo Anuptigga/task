@@ -6,36 +6,44 @@ body {
 }
 
 .form-container {
-  width:600px;
-  margin:30px auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
   overflow-x: hidden;
+  padding: 10px;
 }
-form{
+
+form {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  box-sizing: border-box;
 }
+
 h2 {
   margin-bottom: 0.25rem;
   font-size: 1.8rem;
   color: #222;
+  text-align: center;
 }
+
 p {
   font-size: 0.95rem;
   color: #777;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .formGroup {
-  width:100%;
+  width: 100%;
   margin-bottom: 15px;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
-
 
 label {
   display: block;
@@ -45,12 +53,13 @@ label {
 }
 
 input {
-  width: 90%;
+  width: 100%;
   padding: 0.65rem;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 input:focus {
@@ -59,8 +68,8 @@ input:focus {
   box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
 }
 
-button{
-  width: 50%;
+button {
+  width: 60%;
   padding: 0.75rem;
   background-color: #007bff;
   border: none;
@@ -70,12 +79,12 @@ button{
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #0069d9;
-  }
+  box-sizing: border-box;
 }
 
+button:hover {
+  background-color: #0069d9;
+}
 
 .success-message {
   font-size: large;
@@ -83,16 +92,14 @@ button{
   padding: 20px;
 }
 
-
-
 @media screen and (max-width: 768px) {
   .form-container {
-    width: 80%;
-    padding: 10px 10px;
+    width: 90%;
   }
 
-  button {
-    width: 80%;
+  
+  .formGroup {
+    padding: 0 10%;
   }
 }
 
