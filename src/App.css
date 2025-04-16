@@ -82,3 +82,34 @@ button{
   text-align: center;
   padding: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    padding: 20px 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  input {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+}
